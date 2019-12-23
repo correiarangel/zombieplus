@@ -1,0 +1,36 @@
+{
+  "name": "zumbieplus",
+  "version": "1.0.0",
+  "description": "Projeto de teste automatizados com nigthwatch",
+  "main": "index.js",
+  "scripts": {
+    "test:smoke": "./node_modules/.bin/nightwatch --tag smoke",
+    "test:login": "./node_modules/.bin/nightwatch --group login",
+    "test:loginfirefox": "./node_modules/.bin/nightwatch --group login --env=firefox",
+    "test:cadastrofirefox": "./node_modules/.bin/nightwatch --group cadastro --env=firefox",
+    "test:nologin": "./node_modules/.bin/nightwatch --skipgroup login",
+    "test:busca": "./node_modules/.bin/nightwatch --group busca",
+    "test:cadastro": "./node_modules/.bin/nightwatch --group cadastro",
+    "test:all": "./node_modules/.bin/nightwatch --group login,busca,cadastro",
+    "test:allfirefox": "./node_modules/.bin/nightwatch --group login,busca,cadastro --env=firefox",
+    "test:headless": "./node_modules/.bin/nightwatch --group cadastro --env=headless",
+    "test": "./node_modules/.bin/nightwatch"
+  },
+  "keywords": [
+    "DevRangel",
+    "nodejs",
+    "webdriver",
+    "nightwatch"
+  ],
+  "author": "Marcos F. C. Rangel",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "babel-preset-es2015": "^6.24.1",
+    "chromedriver": "^78.0.1",
+    "geckodriver": "^1.19.1",
+    "nightwatch": "^1.2.4",
+    "pg": "^7.14.0"
+  }
+}

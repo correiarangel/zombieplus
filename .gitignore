@@ -1,0 +1,5 @@
+# files and fulder ignored 
+node_modules
+tests_output
+chromedriver.log
+geckodriver.log

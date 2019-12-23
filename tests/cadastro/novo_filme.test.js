@@ -46,7 +46,7 @@ module.exports = {
         //procura atributo display  .waitForElementPresent('@tableList',5000)
         //Present => verifica se o elemento esta na pagina
         movie
-            .waitForElementPresent('@tableList', 4000)
+            .waitForElementPresent('@tableList', 10000)
             .assert.containsText('@tableList', movieData.title)
     }
 }

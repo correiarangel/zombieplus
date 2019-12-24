@@ -58,25 +58,22 @@ test_workers: {
         },
 
         headless: {
-            lauch_url:url_defualt,
-            globals:{
-                waitForConditionTimeout:timeoutDefault //TimeMeuot padrão
+            launch_url: url_defualt,
+            globals: {
+                waitForConditionTimeout: timeoutDefault //TimeMeuot padrão
             },
-            webdriver:{
-                //server_path:'./node_modules/.bin/chromedriver',
-                server_path:chromedriver.path,
-                port:9515
-            } ,
-            desiredCapabilities:{
+            webdriver: {
+                server_path: chromedriver.path,
+                port: 9515
+            },
+            desiredCapabilities: {
                 browserName: "chrome",
                 chromeOptions: {
                     w3c: false,
-                     args: ['--headless', '--no-sandbox']
+                    args: ['--headless', '--no-sandbox', '--disable-dev-shm-usage']
                 }
             }
-            
         },
-
         stage:{
             lauch_url:"http://url.stoge.zombiplus.com.br"
         }

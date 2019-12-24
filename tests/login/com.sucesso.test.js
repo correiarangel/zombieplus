@@ -1,6 +1,6 @@
 module.exports = {
     
-    '@disabled':true,
+    //'@disabled':true,
 
     '@tags':['smoke'],
 

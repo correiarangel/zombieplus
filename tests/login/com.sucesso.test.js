@@ -1,5 +1,7 @@
 module.exports = {
     
+    '@disabled':true,
+
     '@tags':['smoke'],
 
     'login com sucesso /;-]': (browser) => {

@@ -16,7 +16,9 @@ pipeline {
                 sh "npm run test:h"
             }
             post {
-                junit testResults: "tests_output/**/*.xml"
+               always {
+                    junit testResults: "tests_output/**/*.xml"
+               }
             }
         }
     }

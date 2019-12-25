@@ -19,12 +19,18 @@ module.exports = {
     } ,
 /*
 Permite executar varias instacias simultaneas
-
+B
 test_workers: {
         enabled:true,
         workers: 4
     },
 */
+    screenshots:{
+        enabled:true,
+        on_failure:true,
+        on_error:true,
+        path:'tests_output/'
+    },
     test_settings:{
         default:{
             launch_url:url_defualt,

@@ -16,6 +16,7 @@
     "test:headless": "./node_modules/.bin/nightwatch --group cadastro --env=headless",
     "test:h": "./node_modules/.bin/nightwatch --group login --env=headless",
     "test:h-cad": "./node_modules/.bin/nightwatch --group cadastro --env=headless",
+    "test:ci": "./node_modules/.bin/nightwatch --env=headless",
     "test": "./node_modules/.bin/nightwatch"
   },
   "keywords": [

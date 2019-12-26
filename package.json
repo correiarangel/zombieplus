@@ -12,7 +12,6 @@
     "test:nologin": "./node_modules/.bin/nightwatch --skipgroup login",
     "test:busca": "./node_modules/.bin/nightwatch --group busca",
     "test:cadastro": "./node_modules/.bin/nightwatch --group cadastro",
-    "test:all": "./node_modules/.bin/nightwatch --group login,busca,cadastro",
     "test:allfirefox": "./node_modules/.bin/nightwatch --group login,busca,cadastro --env=firefox",
     "test:headless": "./node_modules/.bin/nightwatch --env=headless",
     "test:h": "./node_modules/.bin/nightwatch --group login --env=headless",

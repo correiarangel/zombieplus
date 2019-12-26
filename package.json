@@ -6,6 +6,7 @@
   "scripts": {
     "test:smoke": "./node_modules/.bin/nightwatch --tag smoke",
     "test:login": "./node_modules/.bin/nightwatch --group login",
+    "test:foxhaeddless": "./node_modules/.bin/nightwatch --env=firefox --headless",
     "test:loginfirefox": "./node_modules/.bin/nightwatch --group login --env=firefox",
     "test:cadastrofirefox": "./node_modules/.bin/nightwatch --group cadastro --env=firefox",
     "test:nologin": "./node_modules/.bin/nightwatch --skipgroup login",
@@ -13,10 +14,11 @@
     "test:cadastro": "./node_modules/.bin/nightwatch --group cadastro",
     "test:all": "./node_modules/.bin/nightwatch --group login,busca,cadastro",
     "test:allfirefox": "./node_modules/.bin/nightwatch --group login,busca,cadastro --env=firefox",
-    "test:headless": "./node_modules/.bin/nightwatch --group cadastro --env=headless",
+    "test:headless": "./node_modules/.bin/nightwatch --env=headless",
     "test:h": "./node_modules/.bin/nightwatch --group login --env=headless",
     "test:h-cad": "./node_modules/.bin/nightwatch --group cadastro --env=headless",
     "test:ci": "./node_modules/.bin/nightwatch --env=headless",
+    "test:firefox-ci": "./node_modules/.bin/nightwatch --env=firefox --headless",
     "test": "./node_modules/.bin/nightwatch"
   },
   "keywords": [

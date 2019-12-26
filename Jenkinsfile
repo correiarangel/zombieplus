@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Tests'){
             steps {
-                sh "npm run test:h"
+                sh "npm run test:firefox-ci"
             }
             post {
                always {

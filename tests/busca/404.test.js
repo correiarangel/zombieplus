@@ -2,13 +2,13 @@ module.exports = {
 
     '@tags':['smoke', '404'],
 
-    before: function(browser){
+    before: function( browser ) { 
 
         let login = browser.page.login()
         let sidebar = browser.page.sidebar()
 
         login.with('rangel@bol.com.br','gato18')
-        sidebar.expectLoggedUser('Rangel') 
+        sidebar.expectLoggedUser('Rangel')
     },
     'Quando eu busco um titulo não cadastrado':function(browser){
         let movie = browser.page.movie()

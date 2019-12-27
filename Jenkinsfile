@@ -16,9 +16,9 @@ pipeline {
                 sh "npm run test:ci"
             }
             post {
-               always {
-                    junit testDataPublishers:[[ $class: 'AttachmentPublisher' ]], testResults: "tests_output/**/*.xml"
-               }
+                always {
+                    junit testDataPublishers:[[$class: 'AttachmentPublisher']], testResults: "tests_output/**/*.xml"
+                }
             }
         }
     }

@@ -83,7 +83,7 @@ test_workers: {
                         "--disable-web-security",
                         "ignore-certificate-errors",
                         "disable-gpu",
-                        "window-size=1024,768",
+                        "window-size=800,600",
                     ]
                 }
             }

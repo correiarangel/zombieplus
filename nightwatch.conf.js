@@ -78,12 +78,13 @@ test_workers: {
                     w3c: false,
                     args: [
                         '--headless', 
-                        '--no-sandbox', 
-                        '--disable-dev-shm-usage',
-                        "--disable-web-security",
+                        'no-sandbox', 
+                        'disable-dev-shm-usage',
+                        "disable-web-security",
                         "ignore-certificate-errors",
                         "disable-gpu",
-                        "window-size=800,600",
+                        "window-size=1024,768",
+                        //"window-size=800,600",
                     ]
                 }
             }

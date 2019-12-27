@@ -1,7 +1,10 @@
 # files and fulder ignored 
 node_modules
 tests_output
-chromedriver.log
-geckodriver.
 
-#teste
+#Chrome logs
+chromedriver.log
+
+
+#Firefox logs
+geckodriver.log

@@ -1,7 +1,7 @@
 module.exports = {
         //holks
         beforeEach:(browser,done) => {
-            browser.resizeWindow(1360,768)
+            browser.resizeWindow(1024,768)
             done()
         },
     
